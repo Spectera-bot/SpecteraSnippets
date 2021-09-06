@@ -9,6 +9,6 @@
 	},
 	"SubCommand": {
 		"prefix": "subcmd",
-		"body": "import { SpecteraSubCommand } from '#structures/SpecteraSubCommand';\nimport { ApplyOptions } from '@sapphire/decorators';\nimport type { Message } from 'discord.js';\nimport type { Args } from\n\n@ApplyOptions<SpecteraSubCommand.Options>({\n\tsubCommands: ['a', 'b'],\n)}\nexport class ${1:${TM_FILENAME_BASE}} extends SpecteraSubCommand {\n\tpublic async a() {\n\t//...\n\t}\n\npublic async b() {\n\t//...\n\t}\n}\n"
+		"body": "import { SpecteraSubCommand } from '#structures/SpecteraSubCommand';\nimport { ApplyOptions } from '@sapphire/decorators';\nimport type { Message } from 'discord.js';\nimport type { Args } from\n\n@ApplyOptions<SpecteraSubCommand.Options>({\n\tsubCommands: ['a', 'b'],\n)}\nexport class ${1:${TM_FILENAME_BASE}} extends SpecteraSubCommand {\n\tpublic async a(message: Message, args: Args) {\n\t//...\n\t}\n\n\tpublic async b(message: Message, args: Args) {\n\t//...\n\t}\n}\n"
 	}
 }

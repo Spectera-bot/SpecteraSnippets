@@ -1,11 +1,17 @@
 {
     "name": "specterasnippets",
+    "publisher": "UndiedGamerGFX",
     "displayName": "SpecteraSnippets",
     "description": "Snippets for Spectera Discord Bot, Not for personal use!",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.60.0"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Spectera-bot/SpecteraSnippets"
+    },
+    "icon": "assets/Spectera.png",
     "categories": [
         "Snippets"
     ],
