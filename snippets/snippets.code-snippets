@@ -1,0 +1,14 @@
+{
+	"Command": {
+		"prefix": "cmd",
+		"body": "import { SpecteraCommand } from '#structures/SpecteraCommand';\nimport { ApplyOptions } from '@sapphire/decorators';\nimport type { Message } from 'discord.js';\nimport type { Args } from '@sapphire/framework';\n\n@ApplyOptions<SpecteraCommand.Options>({\n\tdescription: 'Your description here',\n})\nexport class ${1:${TM_FILENAME_BASE}} extends SpecteraCommand {\n\tpublic async run(message: Message, args:Args) {\n\t//...\n\t}\n}"
+	},
+	"Listener": {
+		"prefix": "listener",
+		"body": "import { Listener } from '@sapphire/framework';\n\nexport class ${1:${TM_FILENAME_BASE}} extends Listener {\n\tpublic async run() {\n\t//... \n\t}\n}"
+	},
+	"SubCommand": {
+		"prefix": "subcmd",
+		"body": "import { SpecteraSubCommand } from '#structures/SpecteraSubCommand';\nimport { ApplyOptions } from '@sapphire/decorators';\nimport type { Message } from 'discord.js';\nimport type { Args } from\n\n@ApplyOptions<SpecteraSubCommand.Options>({\n\tsubCommands: ['a', 'b'],\n)}\nexport class ${1:${TM_FILENAME_BASE}} extends SpecteraSubCommand {\n\tpublic async a() {\n\t//...\n\t}\n\npublic async b() {\n\t//...\n\t}\n}\n"
+	}
+}
