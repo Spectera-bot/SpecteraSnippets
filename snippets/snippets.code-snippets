@@ -5,7 +5,7 @@
 	},
 	"Listener": {
 		"prefix": "listener",
-		"body": "import { Listener } from '@sapphire/framework';\n\nexport class ${1:${TM_FILENAME_BASE}} extends Listener {\n\tpublic async run() {\n\t//... \n\t}\n}"
+		"body": "import { Listener } from '@sapphire/framework';\n\nexport class ${1:${TM_FILENAME_BASE/(.*)/${1: /capitalize}/}} extends Listener {\n\tpublic async run() {\n\t//... \n\t}\n}"
 	},
 	"SubCommand": {
 		"prefix": "subcmd",
