@@ -3,7 +3,7 @@
     "publisher": "UndiedGamerGFX",
     "displayName": "SpecteraSnippets",
     "description": "Snippets for Spectera Discord Bot, Not for personal use!",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "engines": {
         "vscode": "^1.60.0"
     },
